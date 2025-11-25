@@ -1,0 +1,36 @@
+
+@keyframes pulse-alt-1 {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0.6; }
+}
+
+@keyframes pulse-alt-2 {
+  0%, 50%, 100% { opacity: 0.6; }
+  25%, 75% { opacity: 1; }
+}
+
+
+@keyframes gradient-move {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+.pulse-1 {
+  animation: pulse-alt-1 4s infinite ease-in-out;
+}
+
+.pulse-2 {
+  animation: pulse-alt-2 4s infinite ease-in-out;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #4f46e5, #a78bfa, #f472b6); /* adjust colors here */
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-move 8s ease infinite;
+}
+
